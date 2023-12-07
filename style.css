@@ -88,7 +88,7 @@ img {
     height: 100vh;
     float: left;
     background: rgb(36,18,0);
-background: linear-gradient(90deg, rgba(36,18,0,1) 0%, rgba(121,58,9,1) 35%, rgba(255,93,0,1) 100%);
+    background: linear-gradient(90deg, rgba(36,18,0,1) 0%, rgba(121,58,9,1) 35%, rgba(255,93,0,1) 100%);
     width: 33.333333333%;
 }
 
@@ -184,10 +184,8 @@ section {
     padding: 0 1rem;
     width: 100%;
 }
-section > .button{
-    margin-top: 10vh;
-}
-.button {
+
+a#resume.button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,7 +202,33 @@ section > .button{
     color: #fff;
     transition: all 0.3s ease;
 }
-
+div.download{
+    height: 100vh;
+}
+a#resume-download.button {
+    position:relative;
+    left: 25%;
+    right: 25%;
+    margin-top: 0%;
+    padding: 10% 20% 10% 20%;
+    position:relative;
+    text-align: center;
+    border-radius:8px;
+    text-decoration: none;
+    font-family:'PT Sans',helvetica;
+    background: -webkit-linear-gradient(to right, #1a008e, #1f1c18);
+    background: linear-gradient(to right, #1a008e, rgb(0, 183, 255));
+    display:inline-block;
+    font-size: 35px !important;
+    color: #FFF;
+}
+.download > .button{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
 .navbar__links:hover {
     color: #9518fc;
     transition: all 0.3s ease;
@@ -345,7 +369,7 @@ section > .button{
         padding-bottom: 2rem;
     }
 
-    .button {
+    a#resume.button {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -360,7 +384,9 @@ section > .button{
         right: 5%;
         transform: translate(5%, 20%);
     }
-
+    a#resume-download.button {
+    left: 15%;
+    }
     .navbar__toggle .bar {
         display: block;
         cursor: pointer;
