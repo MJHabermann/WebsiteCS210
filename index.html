@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Presentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Section -->
+    <main>
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="#Home-page" id="navbar__logo">Michael Habermann</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="#Home-page" class="navbar__links" id="home-page">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#About-page" class="navbar__links" id="about-page">About</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#Projects-page" class="navbar__links" id="projects-page">Projects</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="#Resume" class="button" id="resume">Resume</a>
+                        
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Website Cards Section-->
+        <div class="web__container">
+            <!--Home Page-->
+            <div class="row">
+                <section id="Home-page"><a href="home-page"></a>
+                    <div class="column-66">
+                        <h1>Home</h1>
+                        <p>This part of the website is to show off my final project in CS210
+                            I hope you all enjoy my presentation!
+                        </p>
+                    </div>
+                    <div class="column-33">
+                        <h4>This website features</h4>
+                        <li>Home: Where you can come back to this section</li>
+                        <li>About: A little bit of information about myself</li>
+                        <li>Projects: Three of my past projects with repositories</li>
+                        <li>Resume: In case any of you are wanting to hire my skillset</li>
+                    </div>
+                </section>
+            </div>
+            <!--About Page-->
+            <div class="row">
+                <section id="About-page"><a href="About-page"></a>
+                    <div class="column-66">
+                        <img src="president.jpg" alt="Italian Trulli">
+                    </div>
+                    <div class="column-33">
+                        <h4>About</h4>
+                        <li>I was born and raised in North Idaho</li>
+                        <li>My Major is Computer Science and Mathematics</li>
+                        <li>I have been programming for 8 Years now</li>
+                        <li>I am Currently the Student Body (ASNIC) President</li>
+                    </div>
+                </section>
+            </div>
+            <section id="Projects-page"><a href="Projects-page"></a>
+                <div class="column-66">
+                    <h2>LC3 Tic-Tac-Toe</h2>
+                    <p>This simple but efficient program runs tic tac toe in LC3 Assembly I used this as a final project
+                        for CS155
+                        at North Idaho College
+                    </p>
+                    <a href="https://github.com/MJHabermann/LC3CS155FinalHabermann">Github Repo</a>
+                </div>
+                <div class="column-33">
+                    <img src="LC3.png" alt="Italian Trulli">
+                </div>
+            </section>
+            <section>
+                <div class="column-66">
+                    <h2>Ducks</h2>
+                    <p>This program was a group project made with sfml libraries! Go to the github
+                        link to find out how you can play it
+                    </p>
+                    <a href="https://github.com/MJHabermann/CS151-SP-2023-Final-Project">Github Repo</a>
+                </div>
+                <div class="column-33">
+                    <img src="ducks.png" alt="Italian Trulli">
+                </div>
+            </section>
+            <section>
+                <div class="column-66">
+                    <h2>Who's that Pokemon!</h2>
+                    <p>This program was made in processing. It searches a website and pulls up a random picture of a pokemon
+                    </p>
+                    <a href="https://github.com/MJHabermann/CS151-SP-2023-Final-Project">Github Repo</a>
+                </div>
+                <div class="column-33">
+                    <img src="processing.png" alt="Italian Trulli">
+                </div>
+            </section>
+            <section id="Resume"><a href="Resume"></a>
+                <button type="submit" onclick="window.open('Resume.pdf')">Download!</button>
+            </section>
+        </div>
+        <script src="app.js"></script>
+    </main>
+</body>
+
+</html>
